@@ -103,9 +103,9 @@ export default {
     },
     {
       heading: "Check it",
-      paragraphs: ["After saving, use Call me to test and ask Ava one of your questions. Check Insights later: fewer transferred calls and messages usually means the answers are working."],
+      paragraphs: ["After saving, select Try it (next to the help link) and ask Ava or Max one of your questions — the panel stays open beside your settings, so you can fix an answer, save and ask again. Nothing in it is saved or sent. Or use Call me to test to hear Ava on your phone. Check Insights later: fewer transferred calls and messages usually means the answers are working."],
     },
   ],
-  related: ["review-link-and-location-note", "call-me-to-test", "business-and-industry"],
+  related: ["test-your-ai", "review-link-and-location-note", "call-me-to-test", "business-and-industry"],
   keywords: ["knowledge base", "FAQ", "questions", "policies", "about", "prices", "train AI", "what AI knows"],
 } satisfies Guide;

@@ -1,23 +1,23 @@
 import type { Guide } from "../types.ts";
-import { button, card, inDialog, label, settingsTab } from "../targets.ts";
+import { button, card, inDialog, label, settingsTab, tab } from "../targets.ts";
 
 export default {
   slug: "call-me-to-test",
   title: "Call me to test: hear your AI receptionist",
   description: "Have Ava call your own phone so you can hear her exactly as a caller would, then read the transcript.",
   category: "start",
-  order: 4,
+  order: 5,
   roles: "Owners and admins.",
-  setupByOptni: "Your location needs a phone number. Optni attaches it for you. Until then the button says there is nothing to call from.",
+  setupByOptni: "Your location needs a phone number. Optni attaches it for you. Until then the Call me tab says it needs a connected number — use Chat or Talk instead.",
   intro:
-    "Before you send real calls to Ava, hear her yourself. Call me to test rings your phone from your business number. You answer and talk to her like a customer would. Test calls are never billed and never create a lead.",
+    "Before you send real calls to Ava, hear her yourself. Call me — the third tab of Test your AI — rings your phone from your business number. You answer and talk to her like a customer would. Test calls are never billed and never create a lead.",
   steps: [
     {
       id: "open",
-      title: "On Today, select Call me to test.",
-      body: "It is also on each location's Voice card in Settings → Locations & channels.",
-      alt: "The Today page header with the Call me to test button ringed.",
-      shot: { app: "web", path: "/", highlight: button("Call me to test") },
+      title: "On Today, select Test your AI, then the Call me tab.",
+      body: "On a location's Voice card in Settings → Locations & channels, Test your AI opens straight on Call me.",
+      alt: "The Test your AI panel with the Call me tab ringed.",
+      shot: { app: "web", path: "/", actions: [{ do: "click", target: button("Test your AI") }], highlight: inDialog(tab("Call me")) },
     },
     {
       id: "number",
@@ -27,7 +27,7 @@ export default {
       shot: {
         app: "web",
         path: "/",
-        actions: [{ do: "click", target: button("Call me to test") }, { do: "fill", target: inDialog(label("Your phone number")), value: "+1 612 555 0199" }],
+        actions: [{ do: "click", target: button("Test your AI") }, { do: "click", target: inDialog(tab("Call me")) }, { do: "fill", target: inDialog(label("Your phone number")), value: "+1 612 555 0199" }],
         highlight: inDialog(label("Your phone number")),
       },
     },
@@ -40,7 +40,8 @@ export default {
         app: "web-sample",
         path: "/",
         actions: [
-          { do: "click", target: button("Call me to test") },
+          { do: "click", target: button("Test your AI") },
+          { do: "click", target: inDialog(tab("Call me")) },
           { do: "fill", target: inDialog(label("Your phone number")), value: "+1 612 555 0199" },
           { do: "click", target: inDialog(button("Call me", true)) },
           { do: "waitFor", target: inDialog({ text: "Completed" }) },
@@ -58,7 +59,8 @@ export default {
         app: "web-sample",
         path: "/",
         actions: [
-          { do: "click", target: button("Call me to test") },
+          { do: "click", target: button("Test your AI") },
+          { do: "click", target: inDialog(tab("Call me")) },
           { do: "fill", target: inDialog(label("Your phone number")), value: "+1 612 555 0199" },
           { do: "click", target: inDialog(button("Call me", true)) },
           { do: "waitFor", target: inDialog({ text: "Completed" }) },
@@ -68,9 +70,9 @@ export default {
     },
     {
       id: "from-settings",
-      title: "To test another location, use Call me to test on its Voice card.",
-      alt: "Settings → Locations & channels, Voice — Ava card, with Call me to test ringed.",
-      shot: { app: "web", path: "/settings", scrollTo: card("Voice — Ava"), highlight: { ...button("Call me to test"), within: card("Voice — Ava") } },
+      title: "To test another location, use Test your AI on its Voice card.",
+      alt: "Settings → Locations & channels, Voice — Ava card, with Test your AI ringed.",
+      shot: { app: "web", path: "/settings", scrollTo: card("Voice — Ava"), highlight: { ...button("Test your AI"), within: card("Voice — Ava") } },
     },
   ],
   sections: [
@@ -84,7 +86,7 @@ export default {
       ],
     },
   ],
-  related: ["greeting", "ai-knowledge", "calls"],
+  related: ["test-your-ai", "greeting", "ai-knowledge", "calls"],
   keywords: ["test call", "demo", "try", "hear Ava", "phone test"],
 } satisfies Guide;
 void settingsTab;

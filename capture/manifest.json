@@ -106,6 +106,78 @@
     "masked": {}
   },
   {
+    "guide": "test-your-ai",
+    "step": "open",
+    "file": "img/test-your-ai/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "test-your-ai",
+    "step": "preview",
+    "file": "img/test-your-ai/preview.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "test-your-ai",
+    "step": "channel",
+    "file": "img/test-your-ai/channel.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "test-your-ai",
+    "step": "ask",
+    "file": "img/test-your-ai/ask.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "test-your-ai",
+    "step": "what-it-did",
+    "file": "img/test-your-ai/what-it-did.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "test-your-ai",
+    "step": "try-it",
+    "file": "img/test-your-ai/try-it.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "test-your-ai",
+    "step": "talk",
+    "file": "img/test-your-ai/talk.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "test-your-ai",
+    "step": "call-me",
+    "file": "img/test-your-ai/call-me.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "test-your-ai",
+    "step": "nudge",
+    "file": "img/test-your-ai/nudge.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
     "guide": "call-me-to-test",
     "step": "open",
     "file": "img/call-me-to-test/open.png",

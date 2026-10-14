@@ -36,6 +36,7 @@ export const startHere: { slug: string; why: string }[] = [
   { slug: "booking-types", why: "Set what can be booked, and what the AI may book." },
   { slug: "ai-knowledge", why: "Tell Ava and Max about your business, FAQs and policies." },
   { slug: "greeting", why: "Make the greeting sound like you." },
+  { slug: "test-your-ai", why: "Chat and talk with Ava and Max before going live — nothing is saved." },
   { slug: "call-me-to-test", why: "Hear Ava on your own phone." },
   { slug: "invite-your-team", why: "Invite your team and pick their roles." },
   { slug: "notifications", why: "Get handover alerts on your phone." },

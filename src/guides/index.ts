@@ -6,6 +6,7 @@ import type { Guide } from "./types.ts";
 import signIn from "./content/sign-in.ts";
 import recoveryCodes from "./content/recovery-codes.ts";
 import resetPassword from "./content/reset-password.ts";
+import testYourAi from "./content/test-your-ai.ts";
 import callMeToTest from "./content/call-me-to-test.ts";
 import inviteYourTeam from "./content/invite-your-team.ts";
 import switchBusinesses from "./content/switch-businesses.ts";
@@ -44,6 +45,7 @@ export const guides: Guide[] = [
   signIn,
   recoveryCodes,
   resetPassword,
+  testYourAi,
   callMeToTest,
   inviteYourTeam,
   switchBusinesses,
