@@ -61,7 +61,9 @@
     "file": "img/recovery-codes/open-security.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "recovery-codes",
@@ -69,7 +71,9 @@
     "file": "img/recovery-codes/new-codes.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "recovery-codes",
@@ -77,7 +81,9 @@
     "file": "img/recovery-codes/confirm.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "recovery-codes",
@@ -86,6 +92,7 @@
     "app": "web",
     "view": "desktop",
     "masked": {
+      "phone": 6,
       "area": 1
     }
   },
@@ -111,7 +118,9 @@
     "file": "img/test-your-ai/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "test-your-ai",
@@ -119,7 +128,9 @@
     "file": "img/test-your-ai/preview.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "test-your-ai",
@@ -127,7 +138,9 @@
     "file": "img/test-your-ai/channel.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "test-your-ai",
@@ -135,7 +148,9 @@
     "file": "img/test-your-ai/ask.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "test-your-ai",
@@ -143,7 +158,9 @@
     "file": "img/test-your-ai/what-it-did.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "test-your-ai",
@@ -151,7 +168,9 @@
     "file": "img/test-your-ai/try-it.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "test-your-ai",
@@ -159,7 +178,9 @@
     "file": "img/test-your-ai/talk.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "test-your-ai",
@@ -167,7 +188,9 @@
     "file": "img/test-your-ai/call-me.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "test-your-ai",
@@ -175,7 +198,9 @@
     "file": "img/test-your-ai/nudge.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "call-me-to-test",
@@ -183,7 +208,9 @@
     "file": "img/call-me-to-test/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "call-me-to-test",
@@ -191,7 +218,9 @@
     "file": "img/call-me-to-test/number.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "call-me-to-test",
@@ -199,7 +228,9 @@
     "file": "img/call-me-to-test/call.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "call-me-to-test",
@@ -207,7 +238,9 @@
     "file": "img/call-me-to-test/transcript.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "call-me-to-test",
@@ -215,7 +248,9 @@
     "file": "img/call-me-to-test/from-settings.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "invite-your-team",
@@ -226,6 +261,7 @@
     "masked": {
       "person": 1,
       "email": 1,
+      "phone": 6,
       "area": 1
     }
   },
@@ -238,6 +274,7 @@
     "masked": {
       "person": 1,
       "email": 1,
+      "phone": 6,
       "area": 1
     }
   },
@@ -250,6 +287,7 @@
     "masked": {
       "person": 1,
       "email": 1,
+      "phone": 6,
       "area": 1
     }
   },
@@ -262,6 +300,7 @@
     "masked": {
       "person": 1,
       "email": 1,
+      "phone": 6,
       "area": 1
     }
   },
@@ -274,6 +313,7 @@
     "masked": {
       "person": 1,
       "email": 1,
+      "phone": 6,
       "area": 1
     }
   },
@@ -283,7 +323,9 @@
     "file": "img/switch-businesses/open.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "switch-businesses",
@@ -291,7 +333,9 @@
     "file": "img/switch-businesses/pick.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "switch-businesses",
@@ -299,7 +343,9 @@
     "file": "img/switch-businesses/words.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "switch-businesses",
@@ -307,7 +353,9 @@
     "file": "img/switch-businesses/mobile.png",
     "app": "web-sample",
     "view": "mobile",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "today",
@@ -315,7 +363,9 @@
     "file": "img/today/numbers.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "today",
@@ -323,7 +373,9 @@
     "file": "img/today/needs-you.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "today",
@@ -331,7 +383,9 @@
     "file": "img/today/handover.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "today",
@@ -339,7 +393,9 @@
     "file": "img/today/confirm.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "today",
@@ -347,7 +403,9 @@
     "file": "img/today/missed.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "today",
@@ -355,7 +413,9 @@
     "file": "img/today/activity.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "inbox-handovers",
@@ -363,7 +423,9 @@
     "file": "img/inbox-handovers/open-inbox.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "inbox-handovers",
@@ -371,7 +433,9 @@
     "file": "img/inbox-handovers/tabs.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "inbox-handovers",
@@ -379,7 +443,9 @@
     "file": "img/inbox-handovers/reason.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "inbox-handovers",
@@ -387,7 +453,9 @@
     "file": "img/inbox-handovers/take-over.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "inbox-handovers",
@@ -403,7 +471,9 @@
     "file": "img/inbox-handovers/contact-panel.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "send-a-message",
@@ -411,7 +481,9 @@
     "file": "img/send-a-message/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "send-a-message",
@@ -419,7 +491,9 @@
     "file": "img/send-a-message/type.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "send-a-message",
@@ -427,7 +501,9 @@
     "file": "img/send-a-message/send.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "opted-out-contacts",
@@ -435,7 +511,9 @@
     "file": "img/opted-out-contacts/thread.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "opted-out-contacts",
@@ -443,7 +521,9 @@
     "file": "img/opted-out-contacts/list.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "calls",
@@ -451,7 +531,9 @@
     "file": "img/calls/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "calls",
@@ -459,7 +541,9 @@
     "file": "img/calls/filter.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "calls",
@@ -467,7 +551,9 @@
     "file": "img/calls/outcome.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "calls",
@@ -475,7 +561,9 @@
     "file": "img/calls/detail.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "calls",
@@ -483,7 +571,9 @@
     "file": "img/calls/play.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "missed-calls",
@@ -491,7 +581,9 @@
     "file": "img/missed-calls/find.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "missed-calls",
@@ -499,7 +591,9 @@
     "file": "img/missed-calls/call.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "missed-calls",
@@ -507,7 +601,9 @@
     "file": "img/missed-calls/mark.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "calendar",
@@ -515,7 +611,9 @@
     "file": "img/calendar/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "calendar",
@@ -523,7 +621,9 @@
     "file": "img/calendar/views.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "calendar",
@@ -531,7 +631,9 @@
     "file": "img/calendar/legend.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "calendar",
@@ -539,7 +641,9 @@
     "file": "img/calendar/week.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "calendar",
@@ -547,7 +651,9 @@
     "file": "img/calendar/open-booking.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "calendar",
@@ -555,7 +661,9 @@
     "file": "img/calendar/new.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "new-booking",
@@ -563,7 +671,9 @@
     "file": "img/new-booking/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "new-booking",
@@ -571,7 +681,9 @@
     "file": "img/new-booking/type.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "new-booking",
@@ -579,7 +691,9 @@
     "file": "img/new-booking/time.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "new-booking",
@@ -587,7 +701,9 @@
     "file": "img/new-booking/customer.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "new-booking",
@@ -595,7 +711,9 @@
     "file": "img/new-booking/confirm.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "change-a-booking",
@@ -635,7 +753,9 @@
     "file": "img/slot-taken/notice.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "providers-and-hours",
@@ -643,7 +763,9 @@
     "file": "img/providers-and-hours/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "providers-and-hours",
@@ -651,7 +773,9 @@
     "file": "img/providers-and-hours/add.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "providers-and-hours",
@@ -659,7 +783,9 @@
     "file": "img/providers-and-hours/name.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "providers-and-hours",
@@ -667,7 +793,9 @@
     "file": "img/providers-and-hours/where-what.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "providers-and-hours",
@@ -675,7 +803,9 @@
     "file": "img/providers-and-hours/hours.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "providers-and-hours",
@@ -683,7 +813,9 @@
     "file": "img/providers-and-hours/save.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "booking-types",
@@ -691,7 +823,9 @@
     "file": "img/booking-types/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "booking-types",
@@ -699,7 +833,9 @@
     "file": "img/booking-types/add.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "booking-types",
@@ -707,7 +843,9 @@
     "file": "img/booking-types/length.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "booking-types",
@@ -715,7 +853,9 @@
     "file": "img/booking-types/rules.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "booking-types",
@@ -723,7 +863,9 @@
     "file": "img/booking-types/ai.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "booking-types",
@@ -731,7 +873,9 @@
     "file": "img/booking-types/save.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "leads",
@@ -739,7 +883,9 @@
     "file": "img/leads/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "leads",
@@ -747,7 +893,9 @@
     "file": "img/leads/stages.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "leads",
@@ -755,7 +903,9 @@
     "file": "img/leads/filter.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "leads",
@@ -763,7 +913,9 @@
     "file": "img/leads/move.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "leads",
@@ -771,7 +923,9 @@
     "file": "img/leads/detail.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "leads",
@@ -779,7 +933,9 @@
     "file": "img/leads/owner-value.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "leads",
@@ -787,7 +943,9 @@
     "file": "img/leads/notes.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "new-lead",
@@ -795,7 +953,9 @@
     "file": "img/new-lead/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 3
+    }
   },
   {
     "guide": "new-lead",
@@ -804,6 +964,7 @@
     "app": "web",
     "view": "desktop",
     "masked": {
+      "phone": 3,
       "person": 1
     }
   },
@@ -814,6 +975,7 @@
     "app": "web",
     "view": "desktop",
     "masked": {
+      "phone": 3,
       "person": 1
     }
   },
@@ -824,6 +986,7 @@
     "app": "web",
     "view": "desktop",
     "masked": {
+      "phone": 3,
       "person": 1
     }
   },
@@ -833,7 +996,9 @@
     "file": "img/website-intake/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "website-intake",
@@ -841,7 +1006,9 @@
     "file": "img/website-intake/name.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "website-intake",
@@ -851,6 +1018,7 @@
     "view": "desktop",
     "masked": {
       "key": 3,
+      "phone": 6,
       "area": 2
     }
   },
@@ -862,6 +1030,7 @@
     "view": "desktop",
     "masked": {
       "key": 4,
+      "phone": 6,
       "area": 2
     }
   },
@@ -871,7 +1040,9 @@
     "file": "img/contacts/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "contacts",
@@ -879,7 +1050,9 @@
     "file": "img/contacts/search.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "contacts",
@@ -887,7 +1060,9 @@
     "file": "img/contacts/detail.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "contacts",
@@ -895,7 +1070,9 @@
     "file": "img/contacts/export.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "contacts",
@@ -903,7 +1080,9 @@
     "file": "img/contacts/delete.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "contacts",
@@ -911,7 +1090,9 @@
     "file": "img/contacts/confirm-delete.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "insights",
@@ -919,7 +1100,9 @@
     "file": "img/insights/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "insights",
@@ -927,7 +1110,9 @@
     "file": "img/insights/range.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "insights",
@@ -935,7 +1120,9 @@
     "file": "img/insights/chart.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "insights",
@@ -943,7 +1130,9 @@
     "file": "img/insights/outcomes.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 2
+    }
   },
   {
     "guide": "business-and-industry",
@@ -951,7 +1140,9 @@
     "file": "img/business-and-industry/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "business-and-industry",
@@ -959,7 +1150,9 @@
     "file": "img/business-and-industry/name.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "business-and-industry",
@@ -967,7 +1160,9 @@
     "file": "img/business-and-industry/industry.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "business-and-industry",
@@ -975,7 +1170,9 @@
     "file": "img/business-and-industry/preview.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "business-and-industry",
@@ -983,7 +1180,9 @@
     "file": "img/business-and-industry/save.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "ai-knowledge",
@@ -991,7 +1190,9 @@
     "file": "img/ai-knowledge/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "ai-knowledge",
@@ -999,7 +1200,9 @@
     "file": "img/ai-knowledge/about.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "ai-knowledge",
@@ -1007,7 +1210,9 @@
     "file": "img/ai-knowledge/add-faq.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "ai-knowledge",
@@ -1015,7 +1220,9 @@
     "file": "img/ai-knowledge/write-faq.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "ai-knowledge",
@@ -1023,7 +1230,9 @@
     "file": "img/ai-knowledge/policies.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "ai-knowledge",
@@ -1031,7 +1240,9 @@
     "file": "img/ai-knowledge/save.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 6
+    }
   },
   {
     "guide": "integrations",
@@ -1040,7 +1251,8 @@
     "app": "web",
     "view": "desktop",
     "masked": {
-      "key": 2
+      "key": 2,
+      "phone": 6
     }
   },
   {
@@ -1050,7 +1262,8 @@
     "app": "web",
     "view": "desktop",
     "masked": {
-      "key": 2
+      "key": 2,
+      "phone": 6
     }
   },
   {
@@ -1060,7 +1273,8 @@
     "app": "web",
     "view": "desktop",
     "masked": {
-      "key": 2
+      "key": 2,
+      "phone": 6
     }
   },
   {
@@ -1070,7 +1284,8 @@
     "app": "web",
     "view": "desktop",
     "masked": {
-      "key": 2
+      "key": 2,
+      "phone": 6
     }
   },
   {
@@ -1079,7 +1294,9 @@
     "file": "img/locations/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "locations",
@@ -1087,7 +1304,9 @@
     "file": "img/locations/pick.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "locations",
@@ -1095,7 +1314,9 @@
     "file": "img/locations/timezone.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "locations",
@@ -1103,7 +1324,9 @@
     "file": "img/locations/hours.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "locations",
@@ -1111,7 +1334,9 @@
     "file": "img/locations/closed.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "locations",
@@ -1119,7 +1344,9 @@
     "file": "img/locations/save.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "greeting",
@@ -1127,7 +1354,9 @@
     "file": "img/greeting/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 5
+    }
   },
   {
     "guide": "greeting",
@@ -1135,7 +1364,9 @@
     "file": "img/greeting/edit.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 5
+    }
   },
   {
     "guide": "greeting",
@@ -1143,7 +1374,9 @@
     "file": "img/greeting/checks.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 5
+    }
   },
   {
     "guide": "greeting",
@@ -1151,7 +1384,9 @@
     "file": "img/greeting/save.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 5
+    }
   },
   {
     "guide": "voice-mode-and-transfer",
@@ -1159,7 +1394,9 @@
     "file": "img/voice-mode-and-transfer/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "voice-mode-and-transfer",
@@ -1167,7 +1404,9 @@
     "file": "img/voice-mode-and-transfer/mode.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "voice-mode-and-transfer",
@@ -1175,7 +1414,9 @@
     "file": "img/voice-mode-and-transfer/transfer.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "voice-mode-and-transfer",
@@ -1183,7 +1424,9 @@
     "file": "img/voice-mode-and-transfer/after-hours.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "voice-mode-and-transfer",
@@ -1191,7 +1434,9 @@
     "file": "img/voice-mode-and-transfer/save.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "texting-and-text-back",
@@ -1199,7 +1444,9 @@
     "file": "img/texting-and-text-back/card.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "texting-and-text-back",
@@ -1207,7 +1454,9 @@
     "file": "img/texting-and-text-back/text-back.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "texting-and-text-back",
@@ -1215,7 +1464,9 @@
     "file": "img/texting-and-text-back/save.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "review-link-and-location-note",
@@ -1223,7 +1474,9 @@
     "file": "img/review-link-and-location-note/review.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "review-link-and-location-note",
@@ -1231,7 +1484,9 @@
     "file": "img/review-link-and-location-note/note.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "review-link-and-location-note",
@@ -1239,7 +1494,9 @@
     "file": "img/review-link-and-location-note/save.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 7
+    }
   },
   {
     "guide": "notifications",
@@ -1247,7 +1504,9 @@
     "file": "img/notifications/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 5
+    }
   },
   {
     "guide": "notifications",
@@ -1255,7 +1514,9 @@
     "file": "img/notifications/choose.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 5
+    }
   },
   {
     "guide": "notifications",
@@ -1311,7 +1572,9 @@
     "file": "img/billing-and-usage/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 5
+    }
   },
   {
     "guide": "billing-and-usage",
@@ -1319,7 +1582,9 @@
     "file": "img/billing-and-usage/usage.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 5
+    }
   },
   {
     "guide": "billing-and-usage",
@@ -1327,7 +1592,9 @@
     "file": "img/billing-and-usage/change.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 5
+    }
   },
   {
     "guide": "billing-and-usage",
@@ -1335,6 +1602,8 @@
     "file": "img/billing-and-usage/portal.png",
     "app": "web",
     "view": "desktop",
-    "masked": {}
+    "masked": {
+      "phone": 5
+    }
   }
 ]
