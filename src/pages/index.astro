@@ -1,0 +1,199 @@
+---
+import Base from "../layouts/Base.astro";
+import Search from "../components/Search.astro";
+import { categories, categoryUrl, guideBySlug, guideUrl, guidesIn, startHere } from "../lib/site.ts";
+---
+<Base title="Optni AI Help — guides for your AI front desk" description="Step-by-step guides for Optni AI: set up Ava (calls) and Max (texts), work the inbox, bookings and leads, and manage your team and locations." path="/">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Optni AI help</p>
+        <h1>Your AI front desk, explained step by step</h1>
+        <p class="lede">
+          Optni answers your business's calls and texts. <strong>Ava</strong> answers the phone and <strong>Max</strong> answers texts. They share one memory of every customer, book into your calendar, capture
+          leads and hand over to your team when a person is needed.
+        </p>
+        <div class="hero-search"><Search id="home-search" /></div>
+      </div>
+      <ul class="facts" aria-label="What Optni does">
+        <li><strong>Answers every call</strong><span>Ava picks up 24/7, books, reschedules and answers questions from what you told her.</span></li>
+        <li><strong>Replies to every text</strong><span>Max texts back missed callers within a minute and handles bookings by text.</span></li>
+        <li><strong>Hands over when it matters</strong><span>Anything they shouldn't answer lands in your inbox with a note, and on your phone.</span></li>
+        <li><strong>Works for any business</strong><span>Clinics, salons, home services, law firms, software teams — one or many locations.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="start" class="wrap start" aria-labelledby="start-title">
+    <div class="section-head">
+      <h2 id="start-title">Start here: your first hour with Optni</h2>
+      <p class="muted">New to Optni? Do these in order. Each takes a few minutes.</p>
+    </div>
+    <ol class="start-list">
+      {
+        startHere.map((s, i) => {
+          const g = guideBySlug.get(s.slug)!;
+          return (
+            <li class="card start-item">
+              <span class="num" aria-hidden="true">{i + 1}</span>
+              <div>
+                <a href={guideUrl(g.slug)} class="start-link">{g.title}</a>
+                <p class="muted">{s.why}</p>
+              </div>
+            </li>
+          );
+        })
+      }
+    </ol>
+    <p class="start-cta"><a class="btn btn-primary" href={guideUrl(startHere[0]!.slug)}>Begin with step 1</a></p>
+  </section>
+
+  <section id="topics" class="wrap topics" aria-labelledby="topics-title">
+    <div class="section-head">
+      <h2 id="topics-title">All topics</h2>
+    </div>
+    <div class="cat-grid">
+      {
+        categories.map((c) => (
+          <section class="card cat" aria-labelledby={`cat-${c.id}`}>
+            <h3 id={`cat-${c.id}`}><a href={categoryUrl(c.id)}>{c.title}</a></h3>
+            <p class="muted">{c.blurb}</p>
+            <ul>
+              {guidesIn(c.id).map((g) => (
+                <li><a href={guideUrl(g.slug)}>{g.title}</a></li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
+  </section>
+</Base>
+<style>
+  .hero {
+    background: linear-gradient(180deg, var(--surface), var(--canvas));
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-grid {
+    display: grid;
+    gap: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  @media (min-width: 960px) {
+    .hero-grid {
+      grid-template-columns: 1.4fr 1fr;
+      align-items: center;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+  .hero-copy {
+    display: grid;
+    gap: 1rem;
+    min-width: 0;
+  }
+  .lede {
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    max-width: 40rem;
+  }
+  .hero-search {
+    max-width: 36rem;
+  }
+  .facts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+    min-width: 0;
+  }
+  .facts li {
+    display: grid;
+    gap: 0.15rem;
+    padding: 0.9rem 1rem;
+    border-left: 3px solid var(--brand-lift);
+    background: var(--surface);
+    border-radius: 0 10px 10px 0;
+  }
+  .facts span {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+  }
+  .section-head {
+    display: grid;
+    gap: 0.35rem;
+    margin: 3rem 0 1.25rem;
+  }
+  .start-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+  }
+  @media (min-width: 720px) {
+    .start-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .start-item {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    padding: 1rem;
+    min-width: 0;
+  }
+  .num {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background: var(--brand-wash);
+    color: var(--brand);
+    font-weight: 700;
+    font-family: var(--font-display);
+  }
+  .start-link {
+    font-weight: 600;
+  }
+  .start-cta {
+    margin-top: 1.25rem;
+  }
+  .cat-grid {
+    display: grid;
+    gap: 1rem;
+  }
+  @media (min-width: 720px) {
+    .cat-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1040px) {
+    .cat-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .cat {
+    padding: 1.25rem;
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+  }
+  .cat h3 a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .cat h3 a:hover {
+    color: var(--brand);
+  }
+  .cat ul {
+    margin: 0.25rem 0 0;
+    padding-left: 1.1rem;
+    display: grid;
+    gap: 0.3rem;
+  }
+</style>

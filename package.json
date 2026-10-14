@@ -1,0 +1,30 @@
+{
+  "name": "optni-guides",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Help guides for Optni AI, published at guides.optni.ai.",
+  "engines": { "node": ">=22.11" },
+  "scripts": {
+    "dev": "astro dev --port 4330",
+    "build": "astro check && astro build",
+    "preview": "astro preview --port 4330",
+    "check:links": "node scripts/check-links.mjs dist",
+    "check:pages": "node scripts/check-pages.mjs",
+    "verify": "npm run build && npm run check:links && npm run check:pages",
+    "capture": "tsx capture/run.ts"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
+    "@fontsource-variable/instrument-sans": "5.3.0",
+    "@fontsource-variable/schibsted-grotesk": "5.3.0",
+    "astro": "7.3.8"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@playwright/test": "1.64.0",
+    "@types/node": "22.20.5",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}

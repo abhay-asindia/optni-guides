@@ -1,0 +1,194 @@
+---
+import "@fontsource-variable/schibsted-grotesk";
+import "@fontsource-variable/instrument-sans";
+import "../styles/global.css";
+import Logo from "../components/Logo.astro";
+import { SITE } from "../lib/site.ts";
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  image?: string;
+  noindex?: boolean;
+}
+const { title, description, path, image, noindex } = Astro.props;
+const canonical = new URL(path, SITE).toString();
+const fullTitle = path === "/" ? title : `${title} · Optni AI Help`;
+const ogImage = image ? new URL(image, SITE).toString() : undefined;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex ? <meta name="robots" content="noindex" /> : null}
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Optni AI Help" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    {ogImage ? <meta property="og:image" content={ogImage} /> : null}
+    <meta name="theme-color" content="#0B3A2E" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <script is:inline>
+      // Apply a saved theme choice before paint. Storage can be blocked: ignore and follow the system.
+      try {
+        const t = localStorage.getItem("optni-guides-theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a href="/" class="brand" aria-label="Optni AI Help — home">
+          <Logo />
+          <span class="brand-text"><span class="brand-name">Optni AI</span><span class="brand-sub">Help guides</span></span>
+        </a>
+        <nav aria-label="Site" class="site-nav">
+          <a href="/#start">Start here</a>
+          <a href="/#topics">All topics</a>
+          <a href="/search/">Search</a>
+        </nav>
+        <button type="button" class="theme" id="theme-toggle" aria-label="Colour theme: system">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+          <span class="theme-label">System</span>
+        </button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap foot">
+        <p>Optni AI — the AI front desk for small and multi-location businesses. Ava answers calls. Max answers texts.</p>
+        <p>Screenshots use invented sample data. <a href="https://optni.ai">optni.ai</a></p>
+      </div>
+    </footer>
+    <script is:inline>
+      (function () {
+        const btn = document.getElementById("theme-toggle");
+        if (!btn) return;
+        const order = ["system", "light", "dark"];
+        const names = { system: "System", light: "Light", dark: "Dark" };
+        let cur = document.documentElement.dataset.theme || "system";
+        const paint = () => {
+          btn.setAttribute("aria-label", "Colour theme: " + names[cur] + ". Change theme");
+          btn.querySelector(".theme-label").textContent = names[cur];
+        };
+        paint();
+        btn.addEventListener("click", () => {
+          cur = order[(order.indexOf(cur) + 1) % order.length];
+          if (cur === "system") delete document.documentElement.dataset.theme;
+          else document.documentElement.dataset.theme = cur;
+          try {
+            if (cur === "system") localStorage.removeItem("optni-guides-theme");
+            else localStorage.setItem("optni-guides-theme", cur);
+          } catch (e) {}
+          paint();
+        });
+      })();
+    </script>
+  </body>
+</html>
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--canvas) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-height: 3.75rem;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--ink);
+    text-decoration: none;
+    margin-right: auto;
+  }
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  .brand-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+  .brand-sub {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+  }
+  .site-nav {
+    display: none;
+    gap: 1.25rem;
+  }
+  .site-nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .site-nav a:hover {
+    color: var(--brand);
+  }
+  @media (min-width: 720px) {
+    .site-nav {
+      display: flex;
+    }
+  }
+  .theme {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 40px;
+    padding: 0 0.7rem;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink-soft);
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .theme-label {
+    display: none;
+  }
+  @media (min-width: 480px) {
+    .theme-label {
+      display: inline;
+    }
+  }
+  main {
+    min-height: 70vh;
+    outline: none;
+  }
+  .site-footer {
+    margin-top: 4rem;
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .foot {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    display: grid;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+</style>

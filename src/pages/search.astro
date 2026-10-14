@@ -1,0 +1,18 @@
+---
+import Base from "../layouts/Base.astro";
+import Search from "../components/Search.astro";
+---
+<Base title="Search the guides" description="Search every Optni AI help guide." path="/search/">
+  <div class="wrap narrow page" data-search-page>
+    <h1>Search the guides</h1>
+    <Search id="page-search" autofocus />
+    <p class="muted">Or browse <a href="/#topics">all topics</a>.</p>
+  </div>
+</Base>
+<style>
+  .page {
+    padding-top: 2rem;
+    display: grid;
+    gap: 1rem;
+  }
+</style>

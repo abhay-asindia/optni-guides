@@ -1,0 +1,182 @@
+---
+/** Client-side search over /search-index.json (built from the guide data). Works with keyboard only. */
+interface Props {
+  autofocus?: boolean;
+  id?: string;
+}
+const { autofocus = false, id = "search" } = Astro.props;
+---
+<div class="search" data-search>
+  <form role="search" action="/search/" method="get" class="search-form">
+    <label for={id} class="sr-only">Search the guides</label>
+    <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+    <input id={id} name="q" type="search" autocomplete="off" placeholder="Search: invite staff, opening hours, STOP…" autofocus={autofocus} aria-describedby={`${id}-status`} aria-controls={`${id}-results`} />
+  </form>
+  <p id={`${id}-status`} class="search-status" role="status" aria-live="polite"></p>
+  <ul id={`${id}-results`} class="search-results" hidden></ul>
+</div>
+<script>
+  type Doc = { u: string; t: string; d: string; c: string; k: string; s: string };
+  let docs: Doc[] | null = null;
+  const load = async (): Promise<Doc[]> => (docs ??= (await (await fetch("/search-index.json")).json()) as Doc[]);
+  const norm = (s: string) => s.toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g, "");
+  function score(d: Doc, terms: string[]) {
+    let total = 0;
+    for (const term of terms) {
+      const t = norm(d.t), k = norm(d.k), ds = norm(d.d), s = norm(d.s);
+      let best = 0;
+      if (t.includes(term)) best = 10;
+      else if (k.includes(term)) best = 7;
+      else if (ds.includes(term)) best = 5;
+      else if (s.includes(term)) best = 2;
+      if (!best) return 0;
+      total += best;
+    }
+    return total;
+  }
+  function snippet(d: Doc, term: string) {
+    const s = d.s;
+    const i = norm(s).indexOf(term);
+    if (i < 0) return d.d;
+    const start = Math.max(0, s.lastIndexOf(" ", Math.max(0, i - 60)));
+    return (start > 0 ? "…" : "") + s.slice(start, start + 160).trim() + "…";
+  }
+  for (const root of document.querySelectorAll<HTMLElement>("[data-search]")) {
+    const input = root.querySelector("input")!;
+    const list = root.querySelector<HTMLUListElement>(".search-results")!;
+    const status = root.querySelector<HTMLElement>(".search-status")!;
+    const run = async () => {
+      const q = norm(input.value.trim());
+      if (q.length < 2) {
+        list.hidden = true;
+        list.replaceChildren();
+        status.textContent = "";
+        return;
+      }
+      const terms = q.split(/\s+/).filter(Boolean);
+      const hits = (await load())
+        .map((d) => ({ d, s: score(d, terms) }))
+        .filter((h) => h.s > 0)
+        .sort((a, b) => b.s - a.s)
+        .slice(0, 8);
+      list.replaceChildren(
+        ...hits.map(({ d }) => {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.href = d.u;
+          const t = document.createElement("span");
+          t.className = "r-title";
+          t.textContent = d.t;
+          const c = document.createElement("span");
+          c.className = "r-cat";
+          c.textContent = d.c;
+          const p = document.createElement("span");
+          p.className = "r-text";
+          p.textContent = snippet(d, terms[0]!);
+          a.append(t, c, p);
+          li.append(a);
+          return li;
+        }),
+      );
+      list.hidden = hits.length === 0;
+      status.textContent = hits.length ? `${hits.length} guide${hits.length === 1 ? "" : "s"} found` : "No guides match. Try another word.";
+    };
+    let timer: number | undefined;
+    input.addEventListener("input", () => {
+      clearTimeout(timer);
+      timer = window.setTimeout(run, 120);
+    });
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown") {
+        const first = list.querySelector("a");
+        if (first) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    });
+    list.addEventListener("keydown", (e) => {
+      const links = [...list.querySelectorAll("a")];
+      const i = links.indexOf(document.activeElement as HTMLAnchorElement);
+      if (e.key === "ArrowDown" && i < links.length - 1) (e.preventDefault(), links[i + 1]!.focus());
+      if (e.key === "ArrowUp") (e.preventDefault(), (i > 0 ? links[i - 1]! : input).focus());
+      if (e.key === "Escape") input.focus();
+    });
+    const fromUrl = new URLSearchParams(location.search).get("q");
+    if (fromUrl && root.closest("[data-search-page]")) {
+      input.value = fromUrl;
+      void run();
+    }
+  }
+</script>
+<style>
+  .search {
+    position: relative;
+    width: 100%;
+  }
+  .search-form {
+    position: relative;
+  }
+  .search-icon {
+    position: absolute;
+    left: 0.95rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--ink-soft);
+  }
+  input {
+    width: 100%;
+    min-height: 52px;
+    padding: 0.7rem 1rem 0.7rem 2.75rem;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    font: inherit;
+    box-shadow: var(--shadow);
+  }
+  input::placeholder {
+    color: var(--ink-mute);
+  }
+  .search-status {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    min-height: 1.2em;
+    margin-top: 0.4rem;
+  }
+  .search-results {
+    list-style: none;
+    margin: 0.25rem 0 0;
+    padding: 0.35rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+  .search-results :global(a) {
+    display: grid;
+    gap: 0.1rem;
+    padding: 0.65rem 0.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .search-results :global(a:hover),
+  .search-results :global(a:focus-visible) {
+    background: var(--brand-wash);
+  }
+  .search-results :global(.r-title) {
+    font-weight: 600;
+    color: var(--brand);
+  }
+  .search-results :global(.r-cat) {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+  }
+  .search-results :global(.r-text) {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+</style>

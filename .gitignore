@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+# capture working files: throwaway logins, browser sessions, app export, logs
+.capture/
+.DS_Store
+*.log
+.env
+.env.*

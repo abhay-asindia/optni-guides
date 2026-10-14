@@ -1,0 +1,225 @@
+/* Optni brand tokens (optni.ai / PLATFORM.md §6). Amber is for THE primary action only. */
+:root {
+  color-scheme: light;
+  --canvas: #f4f3ee; /* sand */
+  --surface: #ffffff; /* paper */
+  --subtle: #f9f9f6;
+  --ink: #0e1614;
+  --ink-soft: #33443f;
+  --ink-mute: #56685f; /* darker than the app's mute so small text passes WCAG AA on sand */
+  --line: #e2e2da;
+  --line-soft: #edede7;
+  --brand: #14624e; /* spruce */
+  --brand-deep: #0b3a2e;
+  --brand-lift: #2fa383;
+  --brand-wash: #e8f1ed;
+  --on-brand: #ffffff;
+  --action: #f0a22e; /* amber */
+  --action-deep: #b4700f;
+  --action-wash: #fdf3e1;
+  --on-action: #0e1614;
+  --attn: #6b459e;
+  --attn-wash: #f1ecf8;
+  --code-bg: #0b3a2e;
+  --code-ink: #e8f1ed;
+  --focus: #2fa383;
+  --shadow: 0 1px 2px rgb(14 22 20 / 0.06), 0 4px 16px rgb(14 22 20 / 0.05);
+  --font-display: "Schibsted Grotesk Variable", "Schibsted Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Instrument Sans Variable", "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "JetBrains Mono", SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --canvas: #0b100f;
+    --surface: #131a18;
+    --subtle: #18211e;
+    --ink: #e8eeeb;
+    --ink-soft: #b8c5c0;
+    --ink-mute: #98aaa3;
+    --line: #293431;
+    --line-soft: #1f2926;
+    --brand: #52c9a3;
+    --brand-deep: #a7dcc9;
+    --brand-lift: #52c9a3;
+    --brand-wash: #142e27;
+    --on-brand: #081612;
+    --action-wash: #30230e;
+    --attn: #ba9ce8;
+    --attn-wash: #281f38;
+    --code-bg: #081612;
+    --code-ink: #d6e9e1;
+    --focus: #52c9a3;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.4);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --canvas: #0b100f;
+  --surface: #131a18;
+  --subtle: #18211e;
+  --ink: #e8eeeb;
+  --ink-soft: #b8c5c0;
+  --ink-mute: #98aaa3;
+  --line: #293431;
+  --line-soft: #1f2926;
+  --brand: #52c9a3;
+  --brand-deep: #a7dcc9;
+  --brand-lift: #52c9a3;
+  --brand-wash: #142e27;
+  --on-brand: #081612;
+  --action-wash: #30230e;
+  --attn: #ba9ce8;
+  --attn-wash: #281f38;
+  --code-bg: #081612;
+  --code-ink: #d6e9e1;
+  --focus: #52c9a3;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.4);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5rem;
+}
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+h1 {
+  font-size: clamp(1.75rem, 4vw, 2.4rem);
+}
+h2 {
+  font-size: 1.35rem;
+}
+h3 {
+  font-size: 1.1rem;
+}
+p {
+  margin: 0;
+}
+a {
+  color: var(--brand);
+  text-underline-offset: 0.18em;
+}
+a:hover {
+  text-decoration-thickness: 2px;
+}
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 50;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+.skip:focus {
+  top: 0.75rem;
+}
+.wrap {
+  width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media (min-width: 640px) {
+  .wrap {
+    padding: 0 1.5rem;
+  }
+}
+.narrow {
+  max-width: 46rem;
+}
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--brand);
+}
+.muted {
+  color: var(--ink-soft);
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.6rem 1.1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+}
+.btn-primary {
+  background: var(--action);
+  border-color: var(--action);
+  color: var(--on-action);
+}
+.btn-primary:hover {
+  background: #f7b955;
+  border-color: var(--action-deep);
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--brand-wash);
+  color: var(--brand);
+}

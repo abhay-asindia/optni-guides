@@ -1,0 +1,1268 @@
+[
+  {
+    "guide": "sign-in",
+    "step": "email-password",
+    "file": "img/sign-in/email-password.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "sign-in",
+    "step": "scan-qr",
+    "file": "img/sign-in/scan-qr.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "key": 1,
+      "area": 1
+    }
+  },
+  {
+    "guide": "sign-in",
+    "step": "enter-first-code",
+    "file": "img/sign-in/enter-first-code.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "key": 1,
+      "area": 1
+    }
+  },
+  {
+    "guide": "sign-in",
+    "step": "save-codes",
+    "file": "img/sign-in/save-codes.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "area": 1
+    }
+  },
+  {
+    "guide": "sign-in",
+    "step": "next-time",
+    "file": "img/sign-in/next-time.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "sign-in",
+    "step": "use-recovery",
+    "file": "img/sign-in/use-recovery.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "recovery-codes",
+    "step": "open-security",
+    "file": "img/recovery-codes/open-security.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "recovery-codes",
+    "step": "new-codes",
+    "file": "img/recovery-codes/new-codes.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "recovery-codes",
+    "step": "confirm",
+    "file": "img/recovery-codes/confirm.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "recovery-codes",
+    "step": "save",
+    "file": "img/recovery-codes/save.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "area": 1
+    }
+  },
+  {
+    "guide": "reset-password",
+    "step": "forgot-link",
+    "file": "img/reset-password/forgot-link.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "reset-password",
+    "step": "enter-email",
+    "file": "img/reset-password/enter-email.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "call-me-to-test",
+    "step": "open",
+    "file": "img/call-me-to-test/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "call-me-to-test",
+    "step": "number",
+    "file": "img/call-me-to-test/number.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "call-me-to-test",
+    "step": "call",
+    "file": "img/call-me-to-test/call.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "call-me-to-test",
+    "step": "transcript",
+    "file": "img/call-me-to-test/transcript.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "call-me-to-test",
+    "step": "from-settings",
+    "file": "img/call-me-to-test/from-settings.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "invite-your-team",
+    "step": "open-team",
+    "file": "img/invite-your-team/open-team.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "person": 1,
+      "email": 1,
+      "area": 1
+    }
+  },
+  {
+    "guide": "invite-your-team",
+    "step": "invite",
+    "file": "img/invite-your-team/invite.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "person": 1,
+      "email": 1,
+      "area": 1
+    }
+  },
+  {
+    "guide": "invite-your-team",
+    "step": "email-role",
+    "file": "img/invite-your-team/email-role.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "person": 1,
+      "email": 1,
+      "area": 1
+    }
+  },
+  {
+    "guide": "invite-your-team",
+    "step": "location",
+    "file": "img/invite-your-team/location.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "person": 1,
+      "email": 1,
+      "area": 1
+    }
+  },
+  {
+    "guide": "invite-your-team",
+    "step": "send",
+    "file": "img/invite-your-team/send.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "person": 1,
+      "email": 1,
+      "area": 1
+    }
+  },
+  {
+    "guide": "switch-businesses",
+    "step": "open",
+    "file": "img/switch-businesses/open.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "switch-businesses",
+    "step": "pick",
+    "file": "img/switch-businesses/pick.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "switch-businesses",
+    "step": "words",
+    "file": "img/switch-businesses/words.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "switch-businesses",
+    "step": "mobile",
+    "file": "img/switch-businesses/mobile.png",
+    "app": "web-sample",
+    "view": "mobile",
+    "masked": {}
+  },
+  {
+    "guide": "today",
+    "step": "numbers",
+    "file": "img/today/numbers.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "today",
+    "step": "needs-you",
+    "file": "img/today/needs-you.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "today",
+    "step": "handover",
+    "file": "img/today/handover.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "today",
+    "step": "confirm",
+    "file": "img/today/confirm.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "today",
+    "step": "missed",
+    "file": "img/today/missed.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "today",
+    "step": "activity",
+    "file": "img/today/activity.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "inbox-handovers",
+    "step": "open-inbox",
+    "file": "img/inbox-handovers/open-inbox.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "inbox-handovers",
+    "step": "tabs",
+    "file": "img/inbox-handovers/tabs.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "inbox-handovers",
+    "step": "reason",
+    "file": "img/inbox-handovers/reason.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "inbox-handovers",
+    "step": "take-over",
+    "file": "img/inbox-handovers/take-over.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "inbox-handovers",
+    "step": "hand-back",
+    "file": "img/inbox-handovers/hand-back.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "inbox-handovers",
+    "step": "contact-panel",
+    "file": "img/inbox-handovers/contact-panel.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "send-a-message",
+    "step": "open",
+    "file": "img/send-a-message/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "send-a-message",
+    "step": "type",
+    "file": "img/send-a-message/type.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "send-a-message",
+    "step": "send",
+    "file": "img/send-a-message/send.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "opted-out-contacts",
+    "step": "thread",
+    "file": "img/opted-out-contacts/thread.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "opted-out-contacts",
+    "step": "list",
+    "file": "img/opted-out-contacts/list.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "calls",
+    "step": "open",
+    "file": "img/calls/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "calls",
+    "step": "filter",
+    "file": "img/calls/filter.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "calls",
+    "step": "outcome",
+    "file": "img/calls/outcome.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "calls",
+    "step": "detail",
+    "file": "img/calls/detail.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "calls",
+    "step": "play",
+    "file": "img/calls/play.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "missed-calls",
+    "step": "find",
+    "file": "img/missed-calls/find.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "missed-calls",
+    "step": "call",
+    "file": "img/missed-calls/call.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "missed-calls",
+    "step": "mark",
+    "file": "img/missed-calls/mark.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "calendar",
+    "step": "open",
+    "file": "img/calendar/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "calendar",
+    "step": "views",
+    "file": "img/calendar/views.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "calendar",
+    "step": "legend",
+    "file": "img/calendar/legend.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "calendar",
+    "step": "week",
+    "file": "img/calendar/week.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "calendar",
+    "step": "open-booking",
+    "file": "img/calendar/open-booking.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "calendar",
+    "step": "new",
+    "file": "img/calendar/new.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "new-booking",
+    "step": "open",
+    "file": "img/new-booking/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "new-booking",
+    "step": "type",
+    "file": "img/new-booking/type.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "new-booking",
+    "step": "time",
+    "file": "img/new-booking/time.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "new-booking",
+    "step": "customer",
+    "file": "img/new-booking/customer.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "new-booking",
+    "step": "confirm",
+    "file": "img/new-booking/confirm.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "change-a-booking",
+    "step": "confirm",
+    "file": "img/change-a-booking/confirm.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "change-a-booking",
+    "step": "reschedule",
+    "file": "img/change-a-booking/reschedule.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "change-a-booking",
+    "step": "cancel",
+    "file": "img/change-a-booking/cancel.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "change-a-booking",
+    "step": "complete",
+    "file": "img/change-a-booking/complete.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "slot-taken",
+    "step": "notice",
+    "file": "img/slot-taken/notice.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "providers-and-hours",
+    "step": "open",
+    "file": "img/providers-and-hours/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "providers-and-hours",
+    "step": "add",
+    "file": "img/providers-and-hours/add.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "providers-and-hours",
+    "step": "name",
+    "file": "img/providers-and-hours/name.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "providers-and-hours",
+    "step": "where-what",
+    "file": "img/providers-and-hours/where-what.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "providers-and-hours",
+    "step": "hours",
+    "file": "img/providers-and-hours/hours.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "providers-and-hours",
+    "step": "save",
+    "file": "img/providers-and-hours/save.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "booking-types",
+    "step": "open",
+    "file": "img/booking-types/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "booking-types",
+    "step": "add",
+    "file": "img/booking-types/add.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "booking-types",
+    "step": "length",
+    "file": "img/booking-types/length.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "booking-types",
+    "step": "rules",
+    "file": "img/booking-types/rules.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "booking-types",
+    "step": "ai",
+    "file": "img/booking-types/ai.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "booking-types",
+    "step": "save",
+    "file": "img/booking-types/save.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "leads",
+    "step": "open",
+    "file": "img/leads/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "leads",
+    "step": "stages",
+    "file": "img/leads/stages.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "leads",
+    "step": "filter",
+    "file": "img/leads/filter.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "leads",
+    "step": "move",
+    "file": "img/leads/move.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "leads",
+    "step": "detail",
+    "file": "img/leads/detail.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "leads",
+    "step": "owner-value",
+    "file": "img/leads/owner-value.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "leads",
+    "step": "notes",
+    "file": "img/leads/notes.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "new-lead",
+    "step": "open",
+    "file": "img/new-lead/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "new-lead",
+    "step": "details",
+    "file": "img/new-lead/details.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "person": 1
+    }
+  },
+  {
+    "guide": "new-lead",
+    "step": "stage",
+    "file": "img/new-lead/stage.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "person": 1
+    }
+  },
+  {
+    "guide": "new-lead",
+    "step": "save",
+    "file": "img/new-lead/save.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "person": 1
+    }
+  },
+  {
+    "guide": "website-intake",
+    "step": "open",
+    "file": "img/website-intake/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "website-intake",
+    "step": "name",
+    "file": "img/website-intake/name.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "website-intake",
+    "step": "copy",
+    "file": "img/website-intake/copy.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "key": 3,
+      "area": 2
+    }
+  },
+  {
+    "guide": "website-intake",
+    "step": "done",
+    "file": "img/website-intake/done.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "key": 4,
+      "area": 2
+    }
+  },
+  {
+    "guide": "contacts",
+    "step": "open",
+    "file": "img/contacts/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "contacts",
+    "step": "search",
+    "file": "img/contacts/search.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "contacts",
+    "step": "detail",
+    "file": "img/contacts/detail.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "contacts",
+    "step": "export",
+    "file": "img/contacts/export.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "contacts",
+    "step": "delete",
+    "file": "img/contacts/delete.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "contacts",
+    "step": "confirm-delete",
+    "file": "img/contacts/confirm-delete.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "insights",
+    "step": "open",
+    "file": "img/insights/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "insights",
+    "step": "range",
+    "file": "img/insights/range.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "insights",
+    "step": "chart",
+    "file": "img/insights/chart.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "insights",
+    "step": "outcomes",
+    "file": "img/insights/outcomes.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "business-and-industry",
+    "step": "open",
+    "file": "img/business-and-industry/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "business-and-industry",
+    "step": "name",
+    "file": "img/business-and-industry/name.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "business-and-industry",
+    "step": "industry",
+    "file": "img/business-and-industry/industry.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "business-and-industry",
+    "step": "preview",
+    "file": "img/business-and-industry/preview.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "business-and-industry",
+    "step": "save",
+    "file": "img/business-and-industry/save.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "ai-knowledge",
+    "step": "open",
+    "file": "img/ai-knowledge/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "ai-knowledge",
+    "step": "about",
+    "file": "img/ai-knowledge/about.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "ai-knowledge",
+    "step": "add-faq",
+    "file": "img/ai-knowledge/add-faq.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "ai-knowledge",
+    "step": "write-faq",
+    "file": "img/ai-knowledge/write-faq.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "ai-knowledge",
+    "step": "policies",
+    "file": "img/ai-knowledge/policies.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "ai-knowledge",
+    "step": "save",
+    "file": "img/ai-knowledge/save.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "integrations",
+    "step": "open",
+    "file": "img/integrations/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "key": 2
+    }
+  },
+  {
+    "guide": "integrations",
+    "step": "google",
+    "file": "img/integrations/google.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "key": 2
+    }
+  },
+  {
+    "guide": "integrations",
+    "step": "open-dental",
+    "file": "img/integrations/open-dental.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "key": 2
+    }
+  },
+  {
+    "guide": "integrations",
+    "step": "not-configured",
+    "file": "img/integrations/not-configured.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {
+      "key": 2
+    }
+  },
+  {
+    "guide": "locations",
+    "step": "open",
+    "file": "img/locations/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "locations",
+    "step": "pick",
+    "file": "img/locations/pick.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "locations",
+    "step": "timezone",
+    "file": "img/locations/timezone.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "locations",
+    "step": "hours",
+    "file": "img/locations/hours.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "locations",
+    "step": "closed",
+    "file": "img/locations/closed.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "locations",
+    "step": "save",
+    "file": "img/locations/save.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "greeting",
+    "step": "open",
+    "file": "img/greeting/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "greeting",
+    "step": "edit",
+    "file": "img/greeting/edit.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "greeting",
+    "step": "checks",
+    "file": "img/greeting/checks.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "greeting",
+    "step": "save",
+    "file": "img/greeting/save.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "voice-mode-and-transfer",
+    "step": "open",
+    "file": "img/voice-mode-and-transfer/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "voice-mode-and-transfer",
+    "step": "mode",
+    "file": "img/voice-mode-and-transfer/mode.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "voice-mode-and-transfer",
+    "step": "transfer",
+    "file": "img/voice-mode-and-transfer/transfer.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "voice-mode-and-transfer",
+    "step": "after-hours",
+    "file": "img/voice-mode-and-transfer/after-hours.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "voice-mode-and-transfer",
+    "step": "save",
+    "file": "img/voice-mode-and-transfer/save.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "texting-and-text-back",
+    "step": "card",
+    "file": "img/texting-and-text-back/card.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "texting-and-text-back",
+    "step": "text-back",
+    "file": "img/texting-and-text-back/text-back.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "texting-and-text-back",
+    "step": "save",
+    "file": "img/texting-and-text-back/save.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "review-link-and-location-note",
+    "step": "review",
+    "file": "img/review-link-and-location-note/review.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "review-link-and-location-note",
+    "step": "note",
+    "file": "img/review-link-and-location-note/note.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "review-link-and-location-note",
+    "step": "save",
+    "file": "img/review-link-and-location-note/save.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "notifications",
+    "step": "open",
+    "file": "img/notifications/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "notifications",
+    "step": "choose",
+    "file": "img/notifications/choose.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "notifications",
+    "step": "app",
+    "file": "img/notifications/app.png",
+    "app": "app",
+    "view": "mobile",
+    "masked": {}
+  },
+  {
+    "guide": "mobile-app",
+    "step": "today",
+    "file": "img/mobile-app/today.png",
+    "app": "app",
+    "view": "mobile",
+    "masked": {}
+  },
+  {
+    "guide": "mobile-app",
+    "step": "thread",
+    "file": "img/mobile-app/thread.png",
+    "app": "app",
+    "view": "mobile",
+    "masked": {}
+  },
+  {
+    "guide": "mobile-app",
+    "step": "confirm",
+    "file": "img/mobile-app/confirm.png",
+    "app": "app",
+    "view": "mobile",
+    "masked": {}
+  },
+  {
+    "guide": "mobile-app",
+    "step": "schedule",
+    "file": "img/mobile-app/schedule.png",
+    "app": "app",
+    "view": "mobile",
+    "masked": {}
+  },
+  {
+    "guide": "mobile-app",
+    "step": "more",
+    "file": "img/mobile-app/more.png",
+    "app": "app",
+    "view": "mobile",
+    "masked": {}
+  },
+  {
+    "guide": "billing-and-usage",
+    "step": "open",
+    "file": "img/billing-and-usage/open.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "billing-and-usage",
+    "step": "usage",
+    "file": "img/billing-and-usage/usage.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "billing-and-usage",
+    "step": "change",
+    "file": "img/billing-and-usage/change.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "billing-and-usage",
+    "step": "portal",
+    "file": "img/billing-and-usage/portal.png",
+    "app": "web",
+    "view": "desktop",
+    "masked": {}
+  }
+]
