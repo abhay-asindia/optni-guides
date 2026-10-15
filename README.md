@@ -66,7 +66,7 @@ by the script, never baked into the app.
   (and the seeded admin/staff), **never** as `founder@optni.ai` or into the real "Optni AI" business.
 - Before every screenshot the page is scanned: any email not at `example.com`, any phone number
   outside 555-01xx, intake keys (`oi_live_…`), JWTs and authenticator secrets are covered. If anything
-  is left uncovered the step **fails**. QR codes, recovery codes and new intake keys are covered
+  is left uncovered the step **fails**. QR codes, setup keys and new intake keys are covered
   explicitly in their recipes. A second pass by a person looks at every image before commit.
 - Logins, sessions and authenticator secrets of the throwaway accounts live in `.capture/` (git-ignored)
   and die with the database.

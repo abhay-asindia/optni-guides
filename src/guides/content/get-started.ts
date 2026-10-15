@@ -48,7 +48,7 @@ export default {
     {
       id: "authenticator",
       title: "Set up your authenticator app.",
-      body: "Owners confirm every sign-in with a code from their phone, because your account can see what callers tell your AI. Scan the QR code, type the code it shows, then save your recovery codes.",
+      body: "Owners confirm every sign-in with a code from their phone, because your account can see what callers tell your AI. Scan the QR code, type the code it shows, then select Confirm.",
       alt: "The Protect your account screen with a QR code (hidden in this guide).",
       shot: {
         app: "web-sample",

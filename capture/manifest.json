@@ -5,9 +5,7 @@
     "file": "img/get-started/sign-up.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 2
-    }
+    "masked": {}
   },
   {
     "guide": "get-started",
@@ -15,9 +13,7 @@
     "file": "img/get-started/code.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 2
-    }
+    "masked": {}
   },
   {
     "guide": "get-started",
@@ -27,7 +23,6 @@
     "view": "desktop",
     "masked": {
       "key": 1,
-      "phone": 2,
       "area": 1
     }
   },
@@ -39,7 +34,6 @@
     "view": "desktop",
     "masked": {
       "email": 1,
-      "phone": 4,
       "field": 1
     }
   },
@@ -49,9 +43,7 @@
     "file": "img/get-started/import.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 4
-    }
+    "masked": {}
   },
   {
     "guide": "get-started",
@@ -59,9 +51,7 @@
     "file": "img/get-started/locations.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 4
-    }
+    "masked": {}
   },
   {
     "guide": "get-started",
@@ -69,9 +59,7 @@
     "file": "img/get-started/services.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 4
-    }
+    "masked": {}
   },
   {
     "guide": "get-started",
@@ -79,9 +67,7 @@
     "file": "img/get-started/knowledge.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 4
-    }
+    "masked": {}
   },
   {
     "guide": "get-started",
@@ -89,9 +75,7 @@
     "file": "img/get-started/handover.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 4
-    }
+    "masked": {}
   },
   {
     "guide": "get-started",
@@ -99,9 +83,7 @@
     "file": "img/get-started/test.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 4
-    }
+    "masked": {}
   },
   {
     "guide": "get-started",
@@ -110,8 +92,7 @@
     "app": "web-sample",
     "view": "desktop",
     "masked": {
-      "email": 5,
-      "phone": 4
+      "email": 5
     }
   },
   {
@@ -121,7 +102,6 @@
     "app": "web-sample",
     "view": "desktop",
     "masked": {
-      "phone": 4,
       "field": 1
     }
   },
@@ -132,7 +112,6 @@
     "app": "web-sample",
     "view": "desktop",
     "masked": {
-      "phone": 4,
       "field": 1
     }
   },
@@ -142,9 +121,7 @@
     "file": "img/get-started/status.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 4
-    }
+    "masked": {}
   },
   {
     "guide": "get-started",
@@ -152,9 +129,7 @@
     "file": "img/get-started/today.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 4
-    }
+    "masked": {}
   },
   {
     "guide": "get-started",
@@ -162,9 +137,7 @@
     "file": "img/get-started/phone.png",
     "app": "web-sample",
     "view": "mobile",
-    "masked": {
-      "phone": 4
-    }
+    "masked": {}
   },
   {
     "guide": "sign-in",
@@ -198,16 +171,6 @@
   },
   {
     "guide": "sign-in",
-    "step": "save-codes",
-    "file": "img/sign-in/save-codes.png",
-    "app": "web",
-    "view": "desktop",
-    "masked": {
-      "area": 1
-    }
-  },
-  {
-    "guide": "sign-in",
     "step": "next-time",
     "file": "img/sign-in/next-time.png",
     "app": "web",
@@ -216,30 +179,36 @@
   },
   {
     "guide": "sign-in",
-    "step": "use-recovery",
-    "file": "img/sign-in/use-recovery.png",
+    "step": "lost-phone",
+    "file": "img/sign-in/lost-phone.png",
     "app": "web",
     "view": "desktop",
     "masked": {}
   },
   {
     "guide": "recovery-codes",
-    "step": "open-security",
-    "file": "img/recovery-codes/open-security.png",
+    "step": "open-team",
+    "file": "img/recovery-codes/open-team.png",
     "app": "web",
     "view": "desktop",
     "masked": {
-      "phone": 6
+      "person": 1,
+      "email": 1,
+      "phone": 1,
+      "area": 1
     }
   },
   {
     "guide": "recovery-codes",
-    "step": "new-codes",
-    "file": "img/recovery-codes/new-codes.png",
+    "step": "reset",
+    "file": "img/recovery-codes/reset.png",
     "app": "web",
     "view": "desktop",
     "masked": {
-      "phone": 6
+      "person": 1,
+      "email": 1,
+      "phone": 1,
+      "area": 1
     }
   },
   {
@@ -249,17 +218,9 @@
     "app": "web",
     "view": "desktop",
     "masked": {
-      "phone": 6
-    }
-  },
-  {
-    "guide": "recovery-codes",
-    "step": "save",
-    "file": "img/recovery-codes/save.png",
-    "app": "web",
-    "view": "desktop",
-    "masked": {
-      "phone": 6,
+      "person": 1,
+      "email": 1,
+      "phone": 1,
       "area": 1
     }
   },
@@ -468,7 +429,7 @@
     "masked": {
       "person": 1,
       "email": 1,
-      "phone": 6,
+      "phone": 1,
       "area": 1
     }
   },
@@ -481,7 +442,7 @@
     "masked": {
       "person": 1,
       "email": 1,
-      "phone": 6,
+      "phone": 1,
       "area": 1
     }
   },
@@ -494,7 +455,7 @@
     "masked": {
       "person": 1,
       "email": 1,
-      "phone": 6,
+      "phone": 1,
       "area": 1
     }
   },
@@ -507,7 +468,7 @@
     "masked": {
       "person": 1,
       "email": 1,
-      "phone": 6,
+      "phone": 1,
       "area": 1
     }
   },
@@ -520,7 +481,7 @@
     "masked": {
       "person": 1,
       "email": 1,
-      "phone": 6,
+      "phone": 1,
       "area": 1
     }
   },

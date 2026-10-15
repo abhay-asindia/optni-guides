@@ -53,6 +53,7 @@ export default {
       heading: "Good to know",
       bullets: [
         "Owners and admins enter their 6-digit code after the password, like on the web.",
+        "New phone? Open More → Security and tap Set up again. Lost your phone? Ask your account owner to reset your authenticator.",
         "Staff only see their own locations.",
       ],
     },

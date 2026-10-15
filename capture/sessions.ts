@@ -80,15 +80,12 @@ async function signInWeb(page: Page, who: Who) {
     const code = page.getByLabel("6-digit code", { exact: true });
     await enrol.or(code).waitFor();
     if (await enrol.isVisible()) {
-      await page.getByText("Can't scan? Enter this key instead").click();
+      await page.getByText("Can't scan? Enter a key instead").click();
       const secret = (await page.getByLabel("Setup key").textContent())!.replace(/\s/g, "");
       secrets.set(who, secret);
       saveSecrets();
-      await page.getByLabel("Then enter the 6-digit code it shows").fill(await freshTotp(who, secret));
-      await page.getByRole("button", { name: "Verify and turn on" }).click();
-      await page.getByRole("list", { name: "Recovery codes" }).waitFor();
-      await page.getByRole("checkbox").check();
-      await page.getByRole("button", { name: "Continue to the dashboard" }).click();
+      await page.getByLabel("Enter the 6-digit code from your app").fill(await freshTotp(who, secret));
+      await page.getByRole("button", { name: "Confirm", exact: true }).click();
     } else {
       await code.fill(await freshTotp(who, secrets.get(who)!));
       await page.getByRole("button", { name: "Verify" }).click();
@@ -107,13 +104,13 @@ export async function signInAction(page: Page, who: Who) {
   await page.waitForTimeout(800);
 }
 export async function enrolAction(page: Page, who: Who) {
-  await page.getByText("Can't scan? Enter this key instead").click();
+  await page.getByText("Can't scan? Enter a key instead").click();
   const secret = (await page.getByLabel("Setup key").textContent())!.replace(/\s/g, "");
   secrets.set(who, secret);
   saveSecrets();
-  await page.getByLabel("Then enter the 6-digit code it shows").fill(await freshTotp(who, secret));
-  await page.getByRole("button", { name: "Verify and turn on" }).click();
-  await page.getByRole("list", { name: "Recovery codes" }).waitFor();
+  await page.getByLabel("Enter the 6-digit code from your app").fill(await freshTotp(who, secret));
+  await page.getByRole("button", { name: "Confirm", exact: true }).click();
+  await page.getByRole("heading", { level: 1 }).filter({ hasText: /Good (morning|afternoon|evening)/ }).waitFor({ timeout: 30_000 });
 }
 
 const webStates = new Map<string, string>();

@@ -86,7 +86,7 @@ export default {
       heading: "When they accept",
       bullets: [
         "The link opens a page where they set their name and a password of at least 12 characters.",
-        "Admins then set up two-step verification and save their recovery codes.",
+        "Admins then set up two-step verification: scan a QR code and type one code from their app.",
         "If the link has expired or was already used, send a new invite.",
       ],
     },

@@ -13,7 +13,7 @@ export default {
       heading: "Signing in",
       bullets: [
         "\"That code didn't work\" — codes change every 30 seconds. Wait for a new one. Check your phone's clock is set automatically.",
-        "Lost your phone — use a recovery code, then set up the authenticator again in Settings → Security.",
+        "Lost your phone — ask your account owner to reset your authenticator (Settings → Team & seats), then set it up again when you sign in. Owners who are locked out can contact Optni.",
         "\"Too many requests\" — wait a few minutes before trying again.",
         "Invite link doesn't work — it has expired (after 7 days) or was used. Ask for a new invite.",
       ],

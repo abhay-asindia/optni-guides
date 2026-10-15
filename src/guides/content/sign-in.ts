@@ -21,7 +21,7 @@ export default {
     {
       id: "scan-qr",
       title: "The first time, scan the QR code with your authenticator app.",
-      body: "Any authenticator app works: Google Authenticator, Microsoft Authenticator, 1Password or Authy. If you can't scan, select \"Can't scan? Enter this key instead\" and type the key into the app.",
+      body: "Any authenticator app works: Google Authenticator, Microsoft Authenticator, 1Password or Authy. If you can't scan, select \"Can't scan? Enter a key instead\" and type the key into the app.",
       alt: "The Set up your authenticator screen with a QR code (hidden in this guide).",
       shot: {
         app: "web",
@@ -34,8 +34,8 @@ export default {
     },
     {
       id: "enter-first-code",
-      title: "Type the 6-digit code the app shows, then select Verify and turn on.",
-      body: "Codes change every 30 seconds. If one fails, wait for the next and try again.",
+      title: "Type the 6-digit code the app shows, then select Confirm.",
+      body: "You go straight on to the dashboard. Codes change every 30 seconds. If one fails, wait for the next and try again.",
       alt: "The code field under the QR code, ringed.",
       shot: {
         app: "web",
@@ -43,21 +43,7 @@ export default {
         path: "/sign-in",
         actions: [{ do: "signIn", who: "admin" }, { do: "waitFor", target: { role: "heading", name: "Set up your authenticator" } }],
         mask: [{ role: "img", name: "QR code for your authenticator app" }],
-        highlight: label("Then enter the 6-digit code it shows"),
-      },
-    },
-    {
-      id: "save-codes",
-      title: "Save your 10 recovery codes, tick the box and continue.",
-      body: "Copy or download them and keep them somewhere safe, away from your phone. Each code works once. See Recovery codes for more.",
-      alt: "Ten recovery codes (hidden in this guide) with Copy and Download buttons and a confirmation checkbox.",
-      shot: {
-        app: "web",
-        as: "signed-out",
-        path: "/sign-in",
-        actions: [{ do: "signIn", who: "admin" }, { do: "waitFor", target: { role: "heading", name: "Set up your authenticator" } }, { do: "enrolMfa", who: "admin" }],
-        mask: [{ role: "list", name: "Recovery codes" }],
-        highlight: { role: "checkbox" },
+        highlight: label("Enter the 6-digit code from your app"),
       },
     },
     {
@@ -67,11 +53,11 @@ export default {
       shot: { app: "web", as: "signed-out", path: "/sign-in", actions: [{ do: "signIn", who: "owner" }, { do: "waitFor", target: label("6-digit code", true) }], highlight: label("6-digit code", true) },
     },
     {
-      id: "use-recovery",
-      title: "No phone? Select Use a recovery code instead.",
-      body: "Type one of your saved codes. Then set up your authenticator again in Settings → Security.",
-      alt: "The code step with the Use a recovery code instead link ringed.",
-      shot: { app: "web", as: "signed-out", path: "/sign-in", actions: [{ do: "signIn", who: "owner" }, { do: "waitFor", target: label("6-digit code", true) }], highlight: button("Use a recovery code instead") },
+      id: "lost-phone",
+      title: "Lost your phone? Ask your account owner to reset your authenticator.",
+      body: "You set it up again the next time you sign in. If you made backup codes, you can select Use a backup code instead. See Lost your phone? for more.",
+      alt: "The code step with the Lost your phone line and the Use a backup code link, the link ringed.",
+      shot: { app: "web", as: "signed-out", path: "/sign-in", actions: [{ do: "signIn", who: "owner" }, { do: "waitFor", target: label("6-digit code", true) }], highlight: button("Use a backup code") },
     },
   ],
   sections: [

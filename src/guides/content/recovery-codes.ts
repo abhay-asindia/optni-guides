@@ -1,59 +1,59 @@
 import type { Guide } from "../types.ts";
 import { button, inDialog, settingsTab } from "../targets.ts";
 
+// Optni's founder co-owns the synthetic test business (PLATFORM.md §12.4): his row is covered.
+const founderRow = { role: "row", name: /founder@optni\.ai|Optni Founder/ } as const;
+
 export default {
   slug: "recovery-codes",
-  title: "Recovery codes",
-  description: "Make a new set of recovery codes, and use one to sign in when you don't have your authenticator.",
+  title: "Lost your phone?",
+  description: "Get back in when you lose the phone with your authenticator: an owner resets it from Settings → Team & seats, and the Optni team can help if the owner is locked out.",
   category: "start",
   order: 2,
-  roles: "Owners and admins (anyone with two-step verification on).",
-  intro: "Recovery codes get you in when your phone is lost or reset. You get 10 when you set up your authenticator. Each works once.",
+  roles: "Owners reset other teammates. Everyone with two-step verification can read this.",
+  intro:
+    "If you lose or replace the phone with your authenticator app, you don't need to keep anything safe in advance. Your account owner resets your authenticator, and you set it up again the next time you sign in.",
   steps: [
     {
-      id: "open-security",
-      title: "Go to Settings → Security.",
-      alt: "Settings with the Security tab ringed.",
-      shot: { app: "web", path: "/settings/security", highlight: settingsTab("Security") },
+      id: "open-team",
+      title: "As the owner, go to Settings → Team & seats.",
+      alt: "Settings with the Team & seats tab ringed.",
+      shot: { app: "web", path: "/settings/team", mask: [founderRow], highlight: settingsTab("Team & seats") },
     },
     {
-      id: "new-codes",
-      title: "Select New recovery codes.",
-      body: "Making new codes switches off all of your old ones.",
-      alt: "The Two-step verification card with the New recovery codes button ringed.",
-      shot: { app: "web", path: "/settings/security", highlight: button("New recovery codes") },
+      id: "reset",
+      title: "Select Reset authenticator on your teammate's row.",
+      body: "Only owners see this, and only for other people. Your own authenticator is changed in Settings → Security with Set up again.",
+      alt: "The team list with the Reset authenticator button on a teammate's row ringed.",
+      shot: { app: "web", path: "/settings/team", mask: [founderRow], highlight: button(/^Reset authenticator for /) },
     },
     {
       id: "confirm",
-      title: "Select Make new codes to confirm.",
-      alt: "A confirmation dialog warning that old codes stop working, with Make new codes ringed.",
-      shot: { app: "web", path: "/settings/security", actions: [{ do: "click", target: button("New recovery codes") }], highlight: inDialog(button("Make new codes")) },
-    },
-    {
-      id: "save",
-      title: "Copy or download the codes and keep them safe.",
-      body: "Store them in a password manager or print them. Don't keep them only on the phone that has your authenticator.",
-      alt: "Ten new recovery codes (hidden in this guide) with Copy codes and Download buttons.",
-      shot: {
-        app: "web",
-        path: "/settings/security",
-        actions: [{ do: "click", target: button("New recovery codes") }, { do: "click", target: inDialog(button("Make new codes")) }, { do: "waitFor", target: { role: "list", name: "Recovery codes" } }],
-        mask: [{ role: "list", name: "Recovery codes" }],
-        highlight: button("Copy codes"),
-      },
+      title: "Select Reset authenticator to confirm.",
+      body: "They're signed out everywhere. The next time they sign in, they scan a new QR code and type one code from their app.",
+      alt: "A confirmation dialog explaining the person will set up their authenticator again, with Reset authenticator ringed.",
+      shot: { app: "web", path: "/settings/team", mask: [founderRow], actions: [{ do: "click", target: button(/^Reset authenticator for /) }], highlight: inDialog(button("Reset authenticator", true)) },
     },
   ],
   sections: [
     {
-      heading: "Signing in with a recovery code",
+      heading: "If you're the one who lost your phone",
       bullets: [
-        "Enter your email and password as usual.",
-        "On the code step, select Use a recovery code instead and type one code.",
-        "That code is now used up. Set up your authenticator again in Settings → Security and make new codes.",
+        "Ask your account owner to reset your authenticator, then sign in and set it up on your new phone.",
+        "Still have your old phone? Go to Settings → Security and select Set up again. Your old app keeps working until you confirm a code from the new one.",
       ],
     },
-    { heading: "Lost your codes and your phone?", paragraphs: ["Ask the business owner, or contact Optni support. For your safety we confirm who you are before we reset two-step verification."] },
+    {
+      heading: "If the owner is locked out",
+      paragraphs: ["Contact the Optni team. For your safety we confirm who you are before we reset your authenticator."],
+    },
+    {
+      heading: "Backup codes are optional",
+      paragraphs: [
+        "Most people don't need them. If you want a way to sign in without your phone, open Settings → Security → Advanced: backup codes (optional) and select Make backup codes. Each code works once, and making new ones switches the old ones off. On the sign-in code step, select Use a backup code to use one.",
+      ],
+    },
   ],
-  related: ["sign-in", "reset-password"],
-  keywords: ["backup codes", "lost phone", "MFA", "2FA", "authenticator"],
+  related: ["sign-in", "invite-your-team", "reset-password"],
+  keywords: ["lost phone", "new phone", "reset authenticator", "backup codes", "recovery codes", "locked out", "MFA", "2FA", "authenticator"],
 } satisfies Guide;
