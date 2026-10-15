@@ -3,6 +3,7 @@
  * so a guide that changes data (e.g. creates an intake key) must not break a later one.
  */
 import type { Guide } from "./types.ts";
+import getStarted from "./content/get-started.ts";
 import signIn from "./content/sign-in.ts";
 import recoveryCodes from "./content/recovery-codes.ts";
 import resetPassword from "./content/reset-password.ts";
@@ -43,6 +44,7 @@ import privacyAndCompliance from "./content/privacy-and-compliance.ts";
 import troubleshooting from "./content/troubleshooting.ts";
 
 export const guides: Guide[] = [
+  getStarted,
   signIn,
   recoveryCodes,
   resetPassword,

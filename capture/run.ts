@@ -63,6 +63,8 @@ async function shoot(page: Page, guide: Guide, step: Step, shot: Shot, view: Vie
   await page.addStyleTag({ content: "*,*::before,*::after{transition:none!important;animation:none!important;caret-color:transparent!important}" });
   // Sample-mode chrome ("Sample data" badge) and preview-only notices are hidden: real users never see them.
   if (shot.app === "web-sample") await page.getByText("Sample data", { exact: true }).locator("xpath=ancestor::*[contains(@class,'rounded')][1]").evaluateAll((els) => els.forEach((e) => ((e as HTMLElement).style.visibility = "hidden"))).catch(() => undefined);
+  // Every sample-only notice the app tags (e.g. "Sample mode — saves stay in this tab" on each save bar).
+  if (shot.app === "web-sample") await page.locator("[data-sample-note]").evaluateAll((els) => els.forEach((e) => ((e as HTMLElement).style.visibility = "hidden"))).catch(() => undefined);
   for (const t of shot.hide ?? []) await loc(page, t).evaluate((e) => ((e as HTMLElement).style.display = "none")).catch(() => undefined);
   const extra = (shot.mask ?? []).map((t) => loc(page, t));
   const { hits, leftovers } = await maskSensitive(page, extra);

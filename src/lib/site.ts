@@ -29,6 +29,7 @@ export const shotPath = (slug: string, stepId: string) => `img/${slug}/${stepId}
 
 /** The "Start here" path for a new business owner, in order. */
 export const startHere: { slug: string; why: string }[] = [
+  { slug: "get-started", why: "Create your account and follow the setup guide to go live." },
   { slug: "sign-in", why: "Sign in and turn on two-step verification." },
   { slug: "business-and-industry", why: "Check your business name and industry, so the words fit." },
   { slug: "locations", why: "Set opening hours, closed dates and time zone for each location." },

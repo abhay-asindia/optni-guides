@@ -1,5 +1,172 @@
 [
   {
+    "guide": "get-started",
+    "step": "sign-up",
+    "file": "img/get-started/sign-up.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "phone": 2
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "code",
+    "file": "img/get-started/code.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "phone": 2
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "authenticator",
+    "file": "img/get-started/authenticator.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "key": 1,
+      "phone": 2,
+      "area": 1
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "steps",
+    "file": "img/get-started/steps.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "email": 1,
+      "phone": 4,
+      "field": 1
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "import",
+    "file": "img/get-started/import.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "phone": 4
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "locations",
+    "file": "img/get-started/locations.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "phone": 4
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "services",
+    "file": "img/get-started/services.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "phone": 4
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "knowledge",
+    "file": "img/get-started/knowledge.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "phone": 4
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "handover",
+    "file": "img/get-started/handover.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "phone": 4
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "test",
+    "file": "img/get-started/test.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "phone": 4
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "team",
+    "file": "img/get-started/team.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "email": 5,
+      "phone": 4
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "plan-number",
+    "file": "img/get-started/plan-number.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "phone": 4,
+      "field": 1
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "texting",
+    "file": "img/get-started/texting.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "phone": 4,
+      "field": 1
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "status",
+    "file": "img/get-started/status.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "phone": 4
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "today",
+    "file": "img/get-started/today.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "phone": 4
+    }
+  },
+  {
+    "guide": "get-started",
+    "step": "phone",
+    "file": "img/get-started/phone.png",
+    "app": "web-sample",
+    "view": "mobile",
+    "masked": {
+      "phone": 4
+    }
+  },
+  {
     "guide": "sign-in",
     "step": "email-password",
     "file": "img/sign-in/email-password.png",
