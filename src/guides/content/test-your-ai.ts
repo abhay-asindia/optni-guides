@@ -140,9 +140,10 @@ export default {
         "Test conversations don't appear in your inbox, calls, leads or calendar and never count toward your plan.",
         "The AI always answers here, even when the location forwards calls, is closed or has calls switched off.",
         "Talk needs Chrome or Edge. In Safari or Firefox, use Chat — it runs the same AI.",
+        "Something off? Use the thumbs under a reply or Send feedback to Optni — see Tell us how your AI did.",
       ],
     },
   ],
-  related: ["ai-knowledge", "call-me-to-test", "greeting"],
+  related: ["feedback", "ai-knowledge", "call-me-to-test", "greeting"],
   keywords: ["test", "try", "simulator", "preview", "demo", "chat with Ava", "talk to Ava", "before going live", "sandbox"],
 } satisfies Guide;

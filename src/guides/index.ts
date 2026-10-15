@@ -8,6 +8,7 @@ import recoveryCodes from "./content/recovery-codes.ts";
 import resetPassword from "./content/reset-password.ts";
 import testYourAi from "./content/test-your-ai.ts";
 import callMeToTest from "./content/call-me-to-test.ts";
+import feedback from "./content/feedback.ts";
 import inviteYourTeam from "./content/invite-your-team.ts";
 import switchBusinesses from "./content/switch-businesses.ts";
 import today from "./content/today.ts";
@@ -47,6 +48,7 @@ export const guides: Guide[] = [
   resetPassword,
   testYourAi,
   callMeToTest,
+  feedback,
   inviteYourTeam,
   switchBusinesses,
   today,

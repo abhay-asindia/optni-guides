@@ -118,9 +118,7 @@
     "file": "img/test-your-ai/open.png",
     "app": "web",
     "view": "desktop",
-    "masked": {
-      "phone": 3
-    }
+    "masked": {}
   },
   {
     "guide": "test-your-ai",
@@ -128,9 +126,7 @@
     "file": "img/test-your-ai/preview.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 3
-    }
+    "masked": {}
   },
   {
     "guide": "test-your-ai",
@@ -138,9 +134,7 @@
     "file": "img/test-your-ai/channel.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 3
-    }
+    "masked": {}
   },
   {
     "guide": "test-your-ai",
@@ -148,9 +142,7 @@
     "file": "img/test-your-ai/ask.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 3
-    }
+    "masked": {}
   },
   {
     "guide": "test-your-ai",
@@ -158,9 +150,7 @@
     "file": "img/test-your-ai/what-it-did.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 3
-    }
+    "masked": {}
   },
   {
     "guide": "test-your-ai",
@@ -168,9 +158,7 @@
     "file": "img/test-your-ai/try-it.png",
     "app": "web",
     "view": "desktop",
-    "masked": {
-      "phone": 6
-    }
+    "masked": {}
   },
   {
     "guide": "test-your-ai",
@@ -178,9 +166,7 @@
     "file": "img/test-your-ai/talk.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 3
-    }
+    "masked": {}
   },
   {
     "guide": "test-your-ai",
@@ -188,9 +174,7 @@
     "file": "img/test-your-ai/call-me.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 3
-    }
+    "masked": {}
   },
   {
     "guide": "test-your-ai",
@@ -198,9 +182,7 @@
     "file": "img/test-your-ai/nudge.png",
     "app": "web-sample",
     "view": "desktop",
-    "masked": {
-      "phone": 3
-    }
+    "masked": {}
   },
   {
     "guide": "call-me-to-test",
@@ -251,6 +233,64 @@
     "masked": {
       "phone": 7
     }
+  },
+  {
+    "guide": "feedback",
+    "step": "thumbs",
+    "file": "img/feedback/thumbs.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "feedback",
+    "step": "what-was-wrong",
+    "file": "img/feedback/what-was-wrong.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "feedback",
+    "step": "send-feedback",
+    "file": "img/feedback/send-feedback.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "feedback",
+    "step": "your-feedback",
+    "file": "img/feedback/your-feedback.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {
+      "email": 1
+    }
+  },
+  {
+    "guide": "feedback",
+    "step": "list",
+    "file": "img/feedback/list.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "feedback",
+    "step": "reply",
+    "file": "img/feedback/reply.png",
+    "app": "web-sample",
+    "view": "desktop",
+    "masked": {}
+  },
+  {
+    "guide": "feedback",
+    "step": "phone",
+    "file": "img/feedback/phone.png",
+    "app": "web-sample",
+    "view": "mobile",
+    "masked": {}
   },
   {
     "guide": "invite-your-team",
